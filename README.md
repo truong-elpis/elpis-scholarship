@@ -8,7 +8,7 @@ This repo provide a script to Elpis Battle's scholarship feature.
 ### Installation
 Requires [Node.js](https://nodejs.org/) v14+ to run.
 
-Install the dependencies and devDependencies and start the script.
+Install the dependencies and devDependencies and start the script. This script makes it easy to automatically send invites to multiple accounts so they can play your accounts.
 
 ```sh
 npm i -g yarn
