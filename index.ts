@@ -95,8 +95,8 @@ const sendInvitations = async () => {
   });
   await PromisePool.withConcurrency(20)
     .for(records)
-    .handleError((err: AxiosError) => {
-      console.log(err.response?.data?.errors);
+    .handleError((err) => {
+      console.log(err);
     })
     .process(async (record: { owner: string; scholar: string }) => {
       const res = await sendInvitation(record.owner, record.scholar);
